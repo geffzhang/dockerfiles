@@ -1,5 +1,5 @@
-#https://github.com/dotnet/coreclr/blob/v2.1.5/Documentation/building/linux-instructions.md
-FROM microsoft/dotnet:2.1-sdk
+#https://github.com/dotnet/coreclr/blob/master/Documentation/building/linux-instructions.md 
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch
 
 RUN apt-get update && apt-get install -y \
     cmake llvm-3.9 \
