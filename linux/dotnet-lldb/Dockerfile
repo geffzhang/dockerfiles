@@ -16,3 +16,6 @@ RUN apt-get update && apt-get install -y \
     uuid-dev \
     libnuma-dev \
     libkrb5-dev
+
+# Kick off a container just to wait debugger to attach and run the app
+ENTRYPOINT ["/bin/bash", "-c", "sleep infinity"]
